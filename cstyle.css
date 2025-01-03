@@ -1,6 +1,5 @@
 body {
     font-family: Helvetica;
-    background-image: url("Screenshot 2024-05-20 9.57.07 AM.jpg");
 }
 
 h1 {
@@ -128,4 +127,89 @@ a {
 
 h1 {
     z-index: 1145;
+}
+
+#main {
+    /*text-align: center; 让div内部文字居中*/
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 360;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h2 {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+h3 {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#redirectButton {
+    background-color: #9E9E9E;
+    /* 背景色接近谷歌按钮的浅灰色 */
+    color: #FAFAFA;
+    /* 字体颜色接近谷歌按钮的蓝色 */
+    border-radius: 22px;
+    /* 圆角 */
+    padding: 10px 20px;
+    /* 内边距 */
+    font-size: 14px;
+    /* 文本大小 */
+    font-weight: 500;
+    /* 字体粗细 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* 平滑过渡效果 */
+}
+
+#redirectButton:enabled {
+    cursor: pointer;
+    /* 鼠标变为指针 */
+}
+
+#redirectButton:enabled:hover {
+    background-color: #2979FF;
+    /* 悬停时背景色 */
+    /* 添加轻微阴影 */
+}
+
+#redirectButton:disabled {
+    background-color: #9E9E9E;
+    /* 禁用时背景色 */
+    color: #FAFAFA;
+    /* 禁用时字体颜色 */
+    cursor: not-allowed;
+    /* 禁用时鼠标变为禁用状态 */
+}
+
+#redirectButton:disabled:hover {
+    background-color: #9E9E9E;
+    /* 禁用时悬停状态 */
+    box-shadow: none;
+    /* 禁用时不显示阴影 */
+}
+
+#captcha-body {
+    z-index: 999;
+    display: none;
+}
+
+#pass {
+    /* 清除默认边框 */
+    border: 0;
+    outline: none;
+    /*清除默认背景 */
+    background-color: transparent;
+    text-decoration: none;
+    /* 去掉下划线 */
+    color: inherit;
+    /* 继承父元素的颜色 */
 }
